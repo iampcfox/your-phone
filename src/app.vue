@@ -6,7 +6,7 @@
     <f7-statusbar></f7-statusbar>
 
     <!-- Main View -->
-    <f7-view id="main-view" url="/" main color-theme="orange"></f7-view>
+    <f7-view id="main-view" url="/" main></f7-view>
 
     <!-- Comment, publisher Popup -->
     <f7-popup :opened="publisherPopupOpened">

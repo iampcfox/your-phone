@@ -39,10 +39,20 @@ import { isAndroid } from './utils/appFunc'
 
 import VueContentPlaceholders from 'vue-content-placeholders'
 
+// 引入 vant UI
+import Vant from 'vant';
+import 'vant/lib/index.css';
+
+Vue.use(Vant);
+
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue, Framework7)
 
 Vue.use(VueContentPlaceholders)
+
+// 事件总线 
+Vue.prototype.$EventBus = new Vue()
+// Vue.prototype.$Tabs = ''
 
 // Init App
 new Vue({
